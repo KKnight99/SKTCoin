@@ -1604,7 +1604,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     }
 
 #ifdef SO_NOSIGPIPE
-    // Different way of disabling SIGPIPE on BSD
+    // Different way of disabling SIGPIPE on SKT
     setsockopt(hListenSocket, SOL_SOCKET, SO_NOSIGPIPE, (void*)&nOne, sizeof(int));
 #endif
 

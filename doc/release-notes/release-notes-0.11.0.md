@@ -21,7 +21,7 @@ SKT Core:
 - Defined BIP32 (HD) address versions to start with `drkp`/`drkv` (`DRKP`/`DRKV`
   for testnet)
 - Adapted BIP44 coin type `5` for SKT (0x80000005) as defined in SLIP-0044
-- Added new units: `limes` (1 / 100.000.000 BSD)
+- Added new units: `limes` (1 / 100.000.000 SKT)
 - Added units for testnet: tDRK, mtDRK, utDRK, tlimes
 - Added new DNS seed from masternode.io
 - Fixed wallet locking after sending coins
@@ -45,9 +45,9 @@ Masternodes:
 
 Darksend:
 
-- Reduced lower darksend limit to 1.5 BSD
+- Reduced lower darksend limit to 1.5 SKT
 - Fixed progress bar calculation for low amounts
-- Improved support for adding BSD after anon has completed
+- Improved support for adding SKT after anon has completed
 - Added denomination information to Overview tab
 - Added more detailed Darksend status information to Overview tab
 - Added Darksend high precision matching engine

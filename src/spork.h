@@ -30,7 +30,7 @@ using namespace boost;
 #define SPORK_1_MASTERNODE_PAYMENTS_ENFORCEMENT_DEFAULT       1424217600  //2015-2-18
 #define SPORK_2_INSTANTX_DEFAULT                              978307200   //2001-1-1
 #define SPORK_3_INSTANTX_BLOCK_FILTERING_DEFAULT              1424217600  //2015-2-18
-#define SPORK_5_MAX_VALUE_DEFAULT                             10000        //10000 BSD 01-05-2015   // Sprungmarke BBBBBBBBBB
+#define SPORK_5_MAX_VALUE_DEFAULT                             10000        //10000 SKT 01-05-2015   // Sprungmarke BBBBBBBBBB
 #define SPORK_7_MASTERNODE_SCANNING_DEFAULT                   978307200   //2001-1-1
 
 class CSporkMessage;

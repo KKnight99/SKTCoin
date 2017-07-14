@@ -1188,7 +1188,7 @@ void FileCommit(FILE *fileout)
     HANDLE hFile = (HANDLE)_get_osfhandle(_fileno(fileout));
     FlushFileBuffers(hFile);
 #else
-    #if defined(__linux__) || defined(__NetBSD__)
+    #if defined(__linux__) || defined(__NetSKT__)
     fdatasync(fileno(fileout));
     #elif defined(__APPLE__) && defined(F_FULLFSYNC)
     fcntl(fileno(fileout), F_FULLFSYNC, 0);
@@ -1491,9 +1491,9 @@ void RenameThread(const char* name)
 #if defined(PR_SET_NAME)
     // Only the first 15 characters are used (16 - NUL terminator)
     ::prctl(PR_SET_NAME, name, 0, 0, 0);
-#elif 0 && (defined(__FreeBSD__) || defined(__OpenBSD__))
+#elif 0 && (defined(__FreeSKT__) || defined(__OpenSKT__))
     // TODO: This is currently disabled because it needs to be verified to work
-    //       on FreeBSD or OpenBSD first. When verified the '0 &&' part can be
+    //       on FreeSKT or OpenSKT first. When verified the '0 &&' part can be
     //       removed.
     pthread_set_name_np(pthread_self(), name);
 

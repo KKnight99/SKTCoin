@@ -9,8 +9,8 @@
 // In addition to the core algorithm several extra rules are then applied in certain situations (e.g. multiple quick blocks) to enhance the behaviour.
 
 
-#ifndef GULDENCOIN_DIFF_BSD_H
-#define GULDENCOIN_DIFF_BSD_H
+#ifndef GULDENCOIN_DIFF_SKT_H
+#define GULDENCOIN_DIFF_SKT_H
 
 #define PERCENT_FACTOR 100
 
@@ -124,7 +124,7 @@ unsigned int static DUAL_KGW3(const CBlockIndex* pindexLast, const CBlockHeader 
 	if ((pblock-> nTime - pindexLast->GetBlockTime()) > nLongTimeLimit)  //block.nTime 
 	{
 		bnNew = Params().ProofOfWorkLimit();
-       	if(kgwdebug)LogPrintf("<BSD> Maximum block time hit - cute diff %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str()); 
+       	if(kgwdebug)LogPrintf("<SKT> Maximum block time hit - cute diff %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str()); 
 	}
 
     if (bnNew > Params().ProofOfWorkLimit()) {
@@ -140,8 +140,8 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const CBlockH
     const CBlockIndex *BlockReading = pindexLast;
     int64_t nActualTimespan = 0;
     int64_t LastBlockTime = 0;
-    int64_t PastBlocksMin = 24;  // BSD 14  - OLD 24
-    int64_t PastBlocksMax = 24;  // BSD 140 - OLD 24
+    int64_t PastBlocksMin = 24;  // SKT 14  - OLD 24
+    int64_t PastBlocksMax = 24;  // SKT 140 - OLD 24
     int64_t CountBlocks = 0;
     CBigNum PastDifficultyAverage;
     CBigNum PastDifficultyAveragePrev;
@@ -297,11 +297,11 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
 		}
 		else
 		{
-	// SKTdev for 11.1.34 BSD BitBreak function
+	// SKTdev for 11.1.34 SKT BitBreak function
 	const int nLongTimebnNew   = 3500;
 	bnNew = bnNew * nLongTimebnNew;
 		}
-       	//LogPrintf("<BSD> Maximum block time hit - cute diff %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str()); 
+       	//LogPrintf("<SKT> Maximum block time hit - cute diff %08x %s\n", bnNew.GetCompact(), bnNew.ToString().c_str()); 
 	}
 	}
 	///////////////////////

@@ -1,4 +1,4 @@
-TOR SUPPORT IN BSD
+TOR SUPPORT IN SKT
 =======================
 
 It is possible to run SKT as a Tor hidden service, and connect to such services.

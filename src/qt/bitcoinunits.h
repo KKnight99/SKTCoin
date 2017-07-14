@@ -26,9 +26,9 @@ public:
      */
     enum Unit
     {
-        BSD,
-        mBSD,
-        uBSD,
+        SKT,
+        mSKT,
+        uSKT,
         limes
     };
 

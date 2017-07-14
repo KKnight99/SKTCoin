@@ -10,5 +10,5 @@ Rebrand from LimecoinX to SKT
 ----------------
 - New GFX and Name
 - Limecoinx ->SKT
-- LIMX ->BSD
+- LIMX ->SKT
 - new protocol 70077

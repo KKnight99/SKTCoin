@@ -8,7 +8,7 @@ SKT Core version 0.11.2 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/BSD-SUPPORT/SKT
+  https://github.com/SKT-SUPPORT/SKT
 
 
 Mining and relay policy enhancements
@@ -64,7 +64,7 @@ sktd/skt-qt (on Linux).
 ----------------
 - SKT Core 0.11.2.17 is forked off the Dash Core 0.11.2.17. Please feel free and compare against forks https://github.com/dashpay
 - The old skt version 0.9.1.4 was forked from the Darkcoin 0.9.1.0 tree, done by iparn https://github.com/IParn/SKT
-- The first limecoin currency is full implemented in the BSD chain, done by iparn https://github.com/IParn/limecoin
+- The first limecoin currency is full implemented in the SKT chain, done by iparn https://github.com/IParn/limecoin
 - The following changes are introduced in this major release. 
 
 SKT Core:
@@ -73,14 +73,14 @@ SKT Core:
 - Version bumped to 0.11.2.17 to indicate a new major release
 - Renamed client to identify with network from Satoshi to Core
 - Bumped protocol version to 70075
-- Masternode with 5000 BSD
-- NEW Reward = 40 BSD per Miner/Pool & 10 BSD per Masternode
+- Masternode with 5000 SKT
+- NEW Reward = 40 SKT per Miner/Pool & 10 SKT per Masternode
 - NEW RPC PORT 8800 and NEW P2P Port Default 8886
 - Changed testnet address versions 
 - Defined BIP32 (HD) address versions
 - Adapted BIP44 coin type 5 for SKT (0x80000005) as defined in SLIP-0044
-- Added new units: limes (1 / 100.000.000 BSD)
-- Added units for testnet: tBSD, mtBSD, uBSD, tlimes
+- Added new units: limes (1 / 100.000.000 SKT)
+- Added units for testnet: tSKT, mtSKT, uSKT, tlimes
 - Fixed wallet locking after sending coins
 - Add -regtest mode, similar to testnet but private with instant block generation with setgenerate RPC.
 - Add separate skt-cli client
@@ -100,9 +100,9 @@ Masternodes:
 
 Darksend:
 
-- Reduced lower darksend limit to 1.5 BSD
+- Reduced lower darksend limit to 1.5 SKT
 - Fixed progress bar calculation for low amounts
-- Improved support for adding BSD after anon has completed
+- Improved support for adding SKT after anon has completed
 - Added denomination information to Overview tab
 - Added more detailed Darksend status information to Overview tab
 - Added Darksend high precision matching engine

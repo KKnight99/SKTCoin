@@ -1,7 +1,7 @@
 1.0.0.2 Release notes
 ====================
 Hardfork
-- Change Masternodes from 5000 BSD to 25.000 BSD
+- Change Masternodes from 5000 SKT to 25.000 SKT
 - Change Block size up to 10 MB KB (4 MB)
 - Change TX size up to 250 KB (100 KB) + 1800 TXs
 
@@ -9,7 +9,7 @@ Softfork
 Block 239.000
 - Add the new Dual KGW3 with Diffbreak
 - Change Blocktime to 3 min (6min)
-- Change Reward to 25 BSD(50 BSD)
+- Change Reward to 25 SKT(50 SKT)
 - change COINBASE_MATURITY to 288 (25)
 - new protocol version
 Block 240.000

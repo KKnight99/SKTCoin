@@ -7,7 +7,7 @@
 #include <boost/lexical_cast.hpp>
 
 //
-// Bootup the Masternode, look for a 5000 BSD input and register on the network
+// Bootup the Masternode, look for a 5000 SKT input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

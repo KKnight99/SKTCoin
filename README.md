@@ -1,4 +1,4 @@
-## BSD - SKT Core 1.2.7.1
+## SKT - SKT Core 1.2.7.1
 ----------------
 ![alt tag](https://dl.dropboxusercontent.com/u/21000833/SKT/Website/Splash.png)
 

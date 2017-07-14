@@ -38,7 +38,7 @@ CActiveMasternode activeMasternode;
 // Count peers we've requested the list from
 int RequestedMasterNodeList = 0;
 
-/* *** BEGIN DARKSEND MAGIC - BSD **********
+/* *** BEGIN DARKSEND MAGIC - SKT **********
     Copyright (c) 2014-2015, SKT Developers
         eduffield - evan@sktpay.io
         udjinm6   - udjinm6@dashpay.io
@@ -1481,7 +1481,7 @@ bool CDarksendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         if(sessionTotalValue > nBalanceNeedsAnonymized) sessionTotalValue = nBalanceNeedsAnonymized;
 
         double fDarkcoinSubmitted = (sessionTotalValue / CENT);
-        LogPrintf("Submitting Darksend for %f BSD CENT - sessionTotalValue %d\n", fDarkcoinSubmitted, sessionTotalValue);
+        LogPrintf("Submitting Darksend for %f SKT CENT - sessionTotalValue %d\n", fDarkcoinSubmitted, sessionTotalValue);
 
         if(pwalletMain->GetDenominatedBalance(true, true) > 0){ //get denominated unconfirmed inputs
             LogPrintf("DoAutomaticDenominating -- Found unconfirmed denominated outputs, will wait till they confirm to continue.\n");

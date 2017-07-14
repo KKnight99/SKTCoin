@@ -275,8 +275,8 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="113"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSD&lt;/b&gt;!</source>
-        <translation>Aviso: Se você encriptar sua wallet e perder sua senha, você vai &lt;b&gt;PERDER TODAS AS SUAS BSD&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKT&lt;/b&gt;!</source>
+        <translation>Aviso: Se você encriptar sua wallet e perder sua senha, você vai &lt;b&gt;PERDER TODAS AS SUAS SKT&lt;/b&gt;!</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="113"/>
@@ -1134,13 +1134,13 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="78"/>
-        <source>Use 2 separate Xnodes to mix funds up to 1000 BSD</source>
-        <translation>Usar 2 Xnodes separados para fazer a mixagem de fundos até 1000 BSD</translation>
+        <source>Use 2 separate Xnodes to mix funds up to 1000 SKT</source>
+        <translation>Usar 2 Xnodes separados para fazer a mixagem de fundos até 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="91"/>
-        <source>Use 8 separate Xnodes to mix funds up to 1000 BSD</source>
-        <translation>Usar 8 Xnodes separados para fazer a mixagem de fundos até 1000 BSD</translation>
+        <source>Use 8 separate Xnodes to mix funds up to 1000 SKT</source>
+        <translation>Usar 8 Xnodes separados para fazer a mixagem de fundos até 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="104"/>
@@ -1149,18 +1149,18 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="117"/>
-        <source>This option is the quickest and will cost about ~0.025 BSD to anonymize 1000 BSD</source>
-        <translation>Esta é a opção mais rápida e custará em torno de ~0,025 BSD para anonimizar 1000 BSD</translation>
+        <source>This option is the quickest and will cost about ~0.025 SKT to anonymize 1000 SKT</source>
+        <translation>Esta é a opção mais rápida e custará em torno de ~0,025 SKT para anonimizar 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="130"/>
-        <source>This option is moderately fast and will cost about 0.05 BSD to anonymize 1000 BSD</source>
-        <translation>Esta opção é moderadamente rápida e custará em torno de ~0,05 BSD para anonimizar 1000 BSD</translation>
+        <source>This option is moderately fast and will cost about 0.05 SKT to anonymize 1000 SKT</source>
+        <translation>Esta opção é moderadamente rápida e custará em torno de ~0,05 SKT para anonimizar 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="156"/>
-        <source>0.1 BSD per 1000 BSD you anonymize.</source>
-        <translation>0,1 BSD por cada 1000 BSD que você anonimizar.</translation>
+        <source>0.1 SKT per 1000 SKT you anonymize.</source>
+        <translation>0,1 SKT por cada 1000 SKT que você anonimizar.</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="143"/>
@@ -1807,8 +1807,8 @@ https://www.transifex.com/projects/p/skt/</source>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="349"/>
-        <source>0 BSD</source>
-        <translation>0 BSD</translation>
+        <source>0 SKT</source>
+        <translation>0 SKT</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="356"/>
@@ -1817,7 +1817,7 @@ https://www.transifex.com/projects/p/skt/</source>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="363"/>
-        <source>0 BSD / 0 Rounds</source>
+        <source>0 SKT / 0 Rounds</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3867,7 +3867,7 @@ https://www.transifex.com/projects/p/skt/</source>
     </message>
     <message numerus="yes">
         <location filename="../walletmodel.cpp" line="271"/>
-        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n BSD.</source>
+        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n SKT.</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
@@ -4128,7 +4128,7 @@ for example: alertnotify=echo %%s | mail -s &quot;SKT Alert&quot; admin@foo.com
     </message>
     <message>
         <location filename="../sktstrings.cpp" line="138"/>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 BSD.</source>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 SKT.</source>
         <translation type="unfinished"/>
     </message>
     <message>

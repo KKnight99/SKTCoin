@@ -275,8 +275,8 @@ Ten produkt zawiera oprogramowanie opracowane przez Projekt OpenSSL do użycia w
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="113"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BSD&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE BSDY&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SKT&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeśli zaszyfrujesz swój portfel i zgubisz swoje hasło, &lt;b&gt;STRACISZ WSZYSTKIE SKTY&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="113"/>
@@ -1135,13 +1135,13 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="78"/>
-        <source>Use 2 separate Xnodes to mix funds up to 1000 BSD</source>
-        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 BSD</translation>
+        <source>Use 2 separate Xnodes to mix funds up to 1000 SKT</source>
+        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="91"/>
-        <source>Use 8 separate Xnodes to mix funds up to 1000 BSD</source>
-        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 BSD</translation>
+        <source>Use 8 separate Xnodes to mix funds up to 1000 SKT</source>
+        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="104"/>
@@ -1150,18 +1150,18 @@ Adres: %4
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="117"/>
-        <source>This option is the quickest and will cost about ~0.025 BSD to anonymize 1000 BSD</source>
-        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 BSD za zanonimizowanie 1000 BSD</translation>
+        <source>This option is the quickest and will cost about ~0.025 SKT to anonymize 1000 SKT</source>
+        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 SKT za zanonimizowanie 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="130"/>
-        <source>This option is moderately fast and will cost about 0.05 BSD to anonymize 1000 BSD</source>
-        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 BSD za zanonimizowanie 1000 BSD</translation>
+        <source>This option is moderately fast and will cost about 0.05 SKT to anonymize 1000 SKT</source>
+        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 SKT za zanonimizowanie 1000 SKT</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="156"/>
-        <source>0.1 BSD per 1000 BSD you anonymize.</source>
-        <translation>0.1 BSD za każde 1000 BSD które zanonimizujesz.</translation>
+        <source>0.1 SKT per 1000 SKT you anonymize.</source>
+        <translation>0.1 SKT za każde 1000 SKT które zanonimizujesz.</translation>
     </message>
     <message>
         <location filename="../forms/Darksendconfig.ui" line="143"/>
@@ -1809,8 +1809,8 @@ https://www.transifex.com/projects/p/skt/</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="349"/>
-        <source>0 BSD</source>
-        <translation>0 BSD</translation>
+        <source>0 SKT</source>
+        <translation>0 SKT</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="356"/>
@@ -1819,8 +1819,8 @@ https://www.transifex.com/projects/p/skt/</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="363"/>
-        <source>0 BSD / 0 Rounds</source>
-        <translation>0 BSD / 0 Rund</translation>
+        <source>0 SKT / 0 Rounds</source>
+        <translation>0 SKT / 0 Rund</translation>
     </message>
     <message>
         <location filename="../forms/overviewpage.ui" line="370"/>
@@ -3870,8 +3870,8 @@ https://www.transifex.com/projects/p/skt/</translation>
     </message>
     <message numerus="yes">
         <location filename="../walletmodel.cpp" line="271"/>
-        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n BSD.</source>
-        <translation><numerusform>InstantX nie obsługuje jeszcze tak wysokiej ilości. Transakcja jest obecnie ograniczona do %n BSD</numerusform><numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n BSD</numerusform><numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n BSD</numerusform></translation>
+        <source>InstantX doesn&apos;t support sending values that high yet. Transactions are currently limited to %n SKT.</source>
+        <translation><numerusform>InstantX nie obsługuje jeszcze tak wysokiej ilości. Transakcja jest obecnie ograniczona do %n SKT</numerusform><numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n SKT</numerusform><numerusform>InstantX nie obsługuje jeszcze tak wysokich ilości. Transakcje są obecnie ograniczone do %n SKT</numerusform></translation>
     </message>
 </context>
 <context>
@@ -4140,8 +4140,8 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
     </message>
     <message>
         <location filename="../sktstrings.cpp" line="138"/>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 BSD.</source>
-        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 BSD</translation>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 SKT.</source>
+        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 SKT</translation>
     </message>
     <message>
         <location filename="../sktstrings.cpp" line="141"/>

@@ -10,7 +10,7 @@
 // Name of client reported in the 'version' message. Report the same name
 // for both sktd and skt-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
-const std::string CLIENT_NAME("BSD Core");
+const std::string CLIENT_NAME("SKT Core");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   "-beta"

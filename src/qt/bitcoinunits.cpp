@@ -16,9 +16,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(BSD);
-    unitlist.append(mBSD);
-    unitlist.append(uBSD);
+    unitlist.append(SKT);
+    unitlist.append(mSKT);
+    unitlist.append(uSKT);
     unitlist.append(limes);
     return unitlist;
 }
@@ -27,9 +27,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case BSD:
-    case mBSD:
-    case uBSD:
+    case SKT:
+    case mSKT:
+    case uSKT:
     case limes:
         return true;
     default:
@@ -43,9 +43,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case BSD: return QString("BSD");
-            case mBSD: return QString("mBSD");
-            case uBSD: return QString::fromUtf8("μBSD");
+            case SKT: return QString("SKT");
+            case mSKT: return QString("mSKT");
+            case uSKT: return QString::fromUtf8("μSKT");
             case limes: return QString::fromUtf8("limes");
             default: return QString("???");
         }
@@ -54,9 +54,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case BSD: return QString("tBSD");
-            case mBSD: return QString("mtBSD");
-            case uBSD: return QString::fromUtf8("μtBSD");
+            case SKT: return QString("tSKT");
+            case mSKT: return QString("mtSKT");
+            case uSKT: return QString::fromUtf8("μtSKT");
             case limes: return QString::fromUtf8("tlimes");
             default: return QString("???");
         }
@@ -69,9 +69,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case BSD: return QString("SKT");
-            case mBSD: return QString("Milli-SKT (1 / 1,000)");
-            case uBSD: return QString("Micro-SKT (1 / 1,000,000)");
+            case SKT: return QString("SKT");
+            case mSKT: return QString("Milli-SKT (1 / 1,000)");
+            case uSKT: return QString("Micro-SKT (1 / 1,000,000)");
             case limes: return QString("Ten Nano-SKT (1 / 100,000,000)");
             default: return QString("???");
         }
@@ -80,9 +80,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case BSD: return QString("TestSKTs");
-            case mBSD: return QString("Milli-TestSKT (1 / 1,000)");
-            case uBSD: return QString("Micro-TestSKT (1 / 1,000,000)");
+            case SKT: return QString("TestSKTs");
+            case mSKT: return QString("Milli-TestSKT (1 / 1,000)");
+            case uSKT: return QString("Micro-TestSKT (1 / 1,000,000)");
             case limes: return QString("Ten Nano-TestSKT (1 / 100,000,000)");
             default: return QString("???");
         }
@@ -93,9 +93,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BSD:  return 100000000;
-    case mBSD: return 100000;
-    case uBSD: return 100;
+    case SKT:  return 100000000;
+    case mSKT: return 100000;
+    case uSKT: return 100;
     case limes: return 1;
     default:   return 100000000;
     }
@@ -105,9 +105,9 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case BSD:  return Q_INT64_C(525000000); //sktdev 04-2015
-    case mBSD: return Q_INT64_C(525000000000);   //sktdev 04-2015
-    case uBSD: return Q_INT64_C(525000000000000); //sktdev 04-2015
+    case SKT:  return Q_INT64_C(525000000); //sktdev 04-2015
+    case mSKT: return Q_INT64_C(525000000000);   //sktdev 04-2015
+    case uSKT: return Q_INT64_C(525000000000000); //sktdev 04-2015
     case limes: return Q_INT64_C(52500000000000000);    //sktdev 04-2015
     default:   return 0;
     }
@@ -117,9 +117,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case BSD: return 8; // 21,000,000 (# digits, without commas)
-    case mBSD: return 11; // 21,000,000,000
-    case uBSD: return 14; // 21,000,000,000,000
+    case SKT: return 8; // 21,000,000 (# digits, without commas)
+    case mSKT: return 11; // 21,000,000,000
+    case uSKT: return 14; // 21,000,000,000,000
     case limes: return 16; // 2,100,000,000,000,000
     default: return 0;
     }
@@ -129,9 +129,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BSD: return 8;
-    case mBSD: return 5;
-    case uBSD: return 2;
+    case SKT: return 8;
+    case mSKT: return 5;
+    case uSKT: return 2;
     case limes: return 0;
     default: return 0;
     }

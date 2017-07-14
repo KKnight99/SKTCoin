@@ -1451,8 +1451,8 @@ int64_t GetBlockValue(int nBits, int nHeight, int64_t nFees)
 	if (nHeight >= (FORKX17_Main_Net-1000))nSubsidy = 25 * COIN;
 	if (nHeight >= ((FORKX17_Main_Net*33)-50256))nSubsidy = 1/10 * COIN;
 	// Premine 1306400
-	// 240K x 50 BSD = 12 MIO
-	// 7920 x 24 BSD = 196 MIO
+	// 240K x 50 SKT = 12 MIO
+	// 7920 x 24 SKT = 196 MIO
 	// Total 210 MIO Coins
 	// We need a limit for security ~33 years
     return nSubsidy + nFees;
@@ -1460,7 +1460,7 @@ int64_t GetBlockValue(int nBits, int nHeight, int64_t nFees)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    	int64_t ret = blockValue / 5; // start at 20% BSD Target is in future 50% by over 2000 Masternodes
+    	int64_t ret = blockValue / 5; // start at 20% SKT Target is in future 50% by over 2000 Masternodes
 	if(nHeight > 140500) ret += blockValue / 20; 
 	// 140500  
 	if(nHeight > 140500+((288*14)* 1)) ret += blockValue / 20; 
@@ -1510,8 +1510,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
     return ret;
 }
 
-static const int64_t nTargetTimespan = 6 * 24 * 60 * 60; // BSD 5 Day
-static const int64_t nTargetSpacing = 5 * 60; // SKT: 5 minutes   BSD
+static const int64_t nTargetTimespan = 6 * 24 * 60 * 60; // SKT 5 Day
+static const int64_t nTargetSpacing = 5 * 60; // SKT: 5 minutes   SKT
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing; // 288 Blocks
 
 //
@@ -2847,7 +2847,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
             if(pindex->GetBlockHash() == block.hashPrevBlock){
                 int64_t masternodePaymentAmount = GetMasternodePayment(pindex->nHeight+1, block.vtx[0].GetValueOut());
 				int64_t hardblockpowreward = block.vtx[0].vout[0].nValue; //write by SKTdev 02-06-2015
-				LogPrintf("## Hardblockreward ## CheckBlock() : BSD masternode payments %d\n", hardblockpowreward);
+				LogPrintf("## Hardblockreward ## CheckBlock() : SKT masternode payments %d\n", hardblockpowreward);
 				bool fIsInitialDownload = IsInitialBlockDownload();
 
                 // If we don't already have its previous block, skip masternode payment step

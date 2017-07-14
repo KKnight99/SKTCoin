@@ -58,7 +58,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     // Set current copyright year
     ui->copyrightLabel->setText(tr("Copyright") + QString(" &copy; 2009-%1 ").arg(COPYRIGHT_YEAR) + tr("The Bitcoin and Dash Core developers") + QString("<br />")
                                  + tr("Copyright") + QString(" &copy; 2014  ")+ tr("Paperwallet by Dogecoin Core developers") + QString("<br />")
-                                 + tr("Copyright") + QString(" &copy; 2014-%1 ").arg(COPYRIGHT_YEAR) + tr("The BSD Core developers."));
+                                 + tr("Copyright") + QString(" &copy; 2014-%1 ").arg(COPYRIGHT_YEAR) + tr("The SKT Core developers."));
 }
 
 void AboutDialog::setModel(ClientModel *model)
@@ -300,7 +300,7 @@ void PaperWalletDialog::on_printButton_clicked()
         bool ok;
 
         // Ask for an amount to send to each paper wallet. It might be better to try to use the BitcoinAmountField, but this works fine.
-        double amountInput = QInputDialog::getDouble(this, tr("Load Paper Wallets"), tr("Please wait for wallets to print and verify readability.<br/>Enter the number of BSD you wish to send to each wallet:"), 0, 0, 2147483647, 8, &ok);
+        double amountInput = QInputDialog::getDouble(this, tr("Load Paper Wallets"), tr("Please wait for wallets to print and verify readability.<br/>Enter the number of SKT you wish to send to each wallet:"), 0, 0, 2147483647, 8, &ok);
 
         if(!ok) {
             return;
