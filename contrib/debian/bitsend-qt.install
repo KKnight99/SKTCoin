@@ -1,0 +1,6 @@
+usr/local/bin/skt-qt usr/bin
+share/pixmaps/skt32.xpm usr/share/pixmaps
+share/pixmaps/skt16.xpm usr/share/pixmaps
+share/pixmaps/skt128.png usr/share/pixmaps
+debian/skt-qt.desktop usr/share/applications
+debian/skt-qt.protocol usr/share/kde4/services/

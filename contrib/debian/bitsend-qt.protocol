@@ -1,0 +1,11 @@
+[Protocol]
+exec=skt-qt '%u'
+protocol=skt
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
