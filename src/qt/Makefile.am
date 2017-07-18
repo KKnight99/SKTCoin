@@ -314,7 +314,7 @@ RES_CSS = \
   
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-BSD_RC = res/skt-qt-res.rc
+SKT_RC = res/skt-qt-res.rc
 
 libsktqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
@@ -339,7 +339,7 @@ if TARGET_DARWIN
   skt_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  skt_qt_SOURCES += $(BSD_RC)
+  skt_qt_SOURCES += $(SKT_RC)
 endif
 skt_qt_LDADD = libsktqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET

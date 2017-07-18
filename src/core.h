@@ -488,7 +488,7 @@ public:
     static uint256 CheckMerkleBranch(uint256 hash, const std::vector<uint256>& vMerkleBranch, int nIndex);
     void print() const;
     
-    uint256 GetHash() const;
+    //uint256 GetHash() const;
 };
 
 

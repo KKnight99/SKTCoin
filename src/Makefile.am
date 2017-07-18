@@ -68,6 +68,9 @@ BITCOIN_CORE_H = \
   rpcserver.h \
   script.h \
   serialize.h \
+  hash/common.h \
+  hash/sha256.h \
+  hash/ripemd160.h \
   hash/sph_blake.h \
   hash/sph_bmw.h \
   hash/sph_cubehash.h \
@@ -167,6 +170,8 @@ libskt_common_a_SOURCES = \
   masternodeconfig.cpp \
   instantx.cpp \
   hash/hash.cpp \
+  hash/sha256.cpp \
+  hash/ripemd160.cpp \
   key.cpp \
   netbase.cpp \
   protocol.cpp \
