@@ -216,9 +216,8 @@ uint64_t CTxOutCompressor::DecompressAmount(uint64_t x)
 }
 uint256 CBlockHeader::GetHash() const
 {
-    return SerializeHash(*this);
-    
-    /* 
+    //return SerializeHash(*this);
+
 	if(GetBlockTime() >= FORKX17_Main_Net2) // SKT PoW Hardfork, Friday, 09-Sep-16 18:00:00 UTC
 	{
 		return XEVAN(BEGIN(nVersion), END(nNonce));
@@ -227,7 +226,6 @@ uint256 CBlockHeader::GetHash() const
 	{
 	 return HashX11(BEGIN(nVersion), END(nNonce));
 	}
-    */
 }
 
 
@@ -300,7 +298,9 @@ void CBlock::print() const
     LogPrintf("\n");
 }
 
+/*
 uint256 CBlock::GetHash() const
 {
     return SerializeHash(*this);
 }
+*/

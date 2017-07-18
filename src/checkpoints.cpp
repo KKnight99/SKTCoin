@@ -41,7 +41,7 @@ namespace Checkpoints
     // sktdev skt 2015-04
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-          (  0, uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701")) //sktdev 04-2015
+          (  0, uint256("0x00000164b60a3a75ece03ffba4920631842014e9e694d28db5461b7231e9c070")) //sktdev 04-2015
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
@@ -53,7 +53,7 @@ namespace Checkpoints
 
     static MapCheckpoints mapCheckpointsTestnet =
         boost::assign::map_list_of
-        ( 0 , uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701"))   //sktdev 04-2015
+        ( 0 , uint256("0x00000164b60a3a75ece03ffba4920631842014e9e694d28db5461b7231e9c070"))   //sktdev 04-2015
         ;
     static const CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
@@ -64,7 +64,7 @@ namespace Checkpoints
 
     static MapCheckpoints mapCheckpointsRegtest =
         boost::assign::map_list_of
-        ( 0, uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701"))
+        ( 0, uint256("0x00000164b60a3a75ece03ffba4920631842014e9e694d28db5461b7231e9c070"))
         ;
     static const CCheckpointData dataRegtest = {
         &mapCheckpointsRegtest,
