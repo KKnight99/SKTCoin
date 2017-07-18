@@ -59,13 +59,13 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1500016822;   //sktdev 04-2015
         genesis.nBits    = 0x1e0ffff0;  //sktdev 04-2015
-        genesis.nNonce   = 302335;  //sktdev 04-2015
+        genesis.nNonce   = 2361230;  //sktdev 04-2015
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000cfaf227cc8f15cf6e02024c15ed69e688e589102938edba4537a1298066"));   //skt   
+        assert(hashGenesisBlock == uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701"));   //skt   
         assert(genesis.hashMerkleRoot == uint256("0x09f3d3def8872ffe75671bcd167acc1e3660f3af738aafede60ac9b5a3ae56bb"));   //checkpoint 38
         //begin
-        if (true && genesis.GetHash() != uint256("0x00000cfaf227cc8f15cf6e02024c15ed69e688e589102938edba4537a1298066"))
+        if (true && genesis.GetHash() != uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701"))
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
@@ -103,12 +103,9 @@ public:
             printf("block.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
         }
         //end
-
    
 		vSeeds.push_back(CDNSSeedData("www.superskynet.org", "47.52.45.101"));
 		
-
-
         base58Prefixes[PUBKEY_ADDRESS] = list_of( 102);                    //sktdev 04-2015   addresses start with 'i'
         base58Prefixes[SCRIPT_ADDRESS] = list_of( 5);                    //sktdev 04-2015   script addresses start with '7'
         base58Prefixes[SECRET_KEY] =     list_of(204);                    //sktdev 04-2015  Pubkey +128 sktdev
@@ -166,10 +163,10 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1500016822;   //sktdev 04-2015 main.cpp 3127
-        genesis.nNonce = 302335;   //sktdev 04-2015 main.cpp 3128
+        genesis.nNonce = 2361230;   //sktdev 04-2015 main.cpp 3128
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000cfaf227cc8f15cf6e02024c15ed69e688e589102938edba4537a1298066"));  //sktdev 04-2015  Fehler
+        assert(hashGenesisBlock == uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701"));  //sktdev 04-2015  Fehler
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -205,12 +202,12 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         genesis.nTime = 1500016822;       // SKTdev 04-2015 old   1417713337  Testnet
         genesis.nBits = 0x1e0ffff0;        // SKTdev 04-2015 old    0x207fffff  Zeile 60
-        genesis.nNonce = 302335;         // SKTdev 04-2015 old   1096447    Testnet
+        genesis.nNonce = 2361230;         // SKTdev 04-2015 old   1096447    Testnet
         nDefaultPort = 19994;             // SKTdev 04-2015 old   19994
         strDataDir = "regtest";
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000cfaf227cc8f15cf6e02024c15ed69e688e589102938edba4537a1298066"));   // SKTdev 04-2015 old      0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e
+        assert(hashGenesisBlock == uint256("0x000001cf22d02b13e4d353f5a9ec5d6d8b56d9924776737e66157c2756900701"));   // SKTdev 04-2015 old      0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
